@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-
-
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-logo"></div>
-
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
@@ -26,8 +23,6 @@
         <div id="unity-build-title">Curated by <a href="https://virtualion.co.jp/index_en.html">Virtualion Inc.</a></div>
       </div>
     </div>
-
-
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Basen.loader.js";
@@ -67,10 +62,8 @@
         footer.style.display = "none";
         container.style.transform = "translate(-50%, -39%)";
       } else {
-        //canvas.style.width = "1024px";
-        //canvas.style.height = "700px";
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "1024px";
+        canvas.style.height = "700px";
       }
       canvas.style.background = "url('" + buildUrl + "/Basen.jpg') center / cover";
       loadingBar.style.display = "block";

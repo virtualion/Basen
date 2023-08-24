@@ -6,11 +6,15 @@
     <title>Virtualion</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/popup.css">
   </head>
   <body>
+
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-logo"></div>
+
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
@@ -18,11 +22,49 @@
       </div>
 
       <div id="unity-footer">
-        <div id="unity-webgl-logo-back"></div>
+        <div id="unity-webgl-logo-back">
+
+<label for="trigger" class="open_btn">操作説明</label>
+</div>
+
+<div class="popup_wrap">
+<input id="trigger" type="checkbox">
+<div class="popup_overlay">
+<label for="trigger" class="popup_trigger"></label>
+<div class="popup_content">
+<label for="trigger" class="close_btn">×</label>
+<p>aaaa</p>
+</div></div></div>
+
+
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Curated by <a href="https://virtualion.co.jp/index_en.html">Virtualion Inc.</a></div>
       </div>
+
+
     </div>
+
+
+<style>
+details {
+  border: 1px solid #aaa;
+  padding: 0.5em 0.5em 0;
+}
+
+.ou_wn{
+position: absolute;
+width: 19%;
+left: 0%;
+}
+
+.ou_wn2{
+position: absolute;
+width: 19%;
+left: 81%;
+}
+
+</style>
+
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Basen.loader.js";
@@ -62,8 +104,8 @@
         footer.style.display = "none";
         container.style.transform = "translate(-50%, -39%)";
       } else {
-        canvas.style.width = "1024px";
-        canvas.style.height = "700px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
       canvas.style.background = "url('" + buildUrl + "/Basen.jpg') center / cover";
       loadingBar.style.display = "block";

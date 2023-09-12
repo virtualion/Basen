@@ -16,7 +16,7 @@ body {
     #unity-container.unity-desktop {
             position: absolute;
         background: #DDDDDD;
-	width: min(85vw, 160vh);
+	width: min(60vw, 132vh);
 	border: solid;
 	height: 90vh;
         left: 50%;
@@ -36,9 +36,8 @@ body {
     }
 
 #unity-canvas {
-    background: #FFFFFF;
+    background: #FFFFFF
 }
-
 
 .unity-mobile #unity-canvas {
     width: 100%;

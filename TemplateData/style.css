@@ -16,7 +16,7 @@ body {
     #unity-container.unity-desktop {
             position: absolute;
         background: #DDDDDD;
-	width: 95vw;/*min(80vw, 160vh); */
+	width: 85vw;/*min(80vw, 160vh); */
 	border: solid;
 	height: 90vh;
         left: 50%;
